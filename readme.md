@@ -54,6 +54,12 @@ const defineRoutes: DefineFastifyRoutes = (fastify) => {
 export default defineRoutes;
 ```
 
+#### port
+
+Specifies the port to use in production. Most hosts will set `process.env.PORT` and that will be used, so setting this option is unnecessary. If you do set *port* it will override host-specific config.
+
+In development mode this option has no effect, as fastify runs on the same server as Astro.
+
 ### Note on route priority
 
 Fastify runs in front of Astro's own routing, which means that any routes you define in fastify take priority over routes defined in Astro. So if, for example, you have conflicting routes the Astro route will never be hit.
