@@ -21,10 +21,10 @@ import fastify from '@matthewp/astro-fastify';
 
 /** @type {import('astro').AstroUserConfig} */
 export default {
-	output: 'server',
-	adapter: fastify({
-		entry: new URL('./api/index.js', import.meta.url)
-	})
+  output: 'server',
+  adapter: fastify({
+    entry: new URL('./api/index.js', import.meta.url)
+  })
 };
 ```
 
