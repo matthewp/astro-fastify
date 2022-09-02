@@ -39,7 +39,7 @@ __api/index.ts__
 ```js
 import type { DefineFastifyRoutes } from '@matthewp/astro-fastify';
 
-export default function(fastify) {
+const defineRoutes: DefineFastifyRoutes = (fastify) => {
   fastify.get('/api/todos', function(request, reply) {
     reply.send({
       todos: [
@@ -49,7 +49,9 @@ export default function(fastify) {
       ]
     });
   })
-}
+};
+
+export default defineRoutes;
 ```
 
 ### Note on route priority
