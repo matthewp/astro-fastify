@@ -3,7 +3,7 @@
   "version": "1.3.0",
   "description": "A Fastify integration for Astro",
   "main": "lib/index.js",
-  "types": "lib/types.ts",
+  "types": "lib/types.d.ts",
   "type": "module",
   "directories": {
     "lib": "lib"

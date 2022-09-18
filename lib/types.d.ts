@@ -1,4 +1,5 @@
 import type { FastifyInstance } from 'fastify';
+import type { AstroIntegration } from 'astro';
 
 export type ServerArgs = {
   clientRelative: string;
@@ -23,3 +24,5 @@ export type IntegrationOptions = {
    */
   port?: number;
 };
+
+export default function(opts: IntegrationOptions): AstroIntegration;
