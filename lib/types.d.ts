@@ -5,6 +5,7 @@ export type ServerArgs = {
   clientRelative: string;
   assetsPrefix: string;
   port: number | undefined;
+  logger: FastifyServerOptions['logger'] | undefined;
 };
 
 export type DefineFastifyRoutes = (fastify: FastifyInstance) => void;
