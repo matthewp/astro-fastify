@@ -1,4 +1,4 @@
-import type { FastifyInstance } from 'fastify';
+import type { FastifyInstance, FastifyServerOptions } from 'fastify';
 import type { AstroIntegration } from 'astro';
 
 export type ServerArgs = {
@@ -23,6 +23,10 @@ export type IntegrationOptions = {
    * any host variables.
    */
   port?: number;
+  /**
+   * Enable logging
+   */
+  logger?: FastifyServerOptions['logger'];
 };
 
 export default function(opts: IntegrationOptions): AstroIntegration;
