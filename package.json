@@ -25,10 +25,15 @@
     "url": "https://github.com/matthewp/astro-fastify/issues"
   },
   "homepage": "https://github.com/matthewp/astro-fastify#readme",
+  "peerDependencies": {
+    "astro": "^1.1.3"
+  },
   "dependencies": {
     "@astrojs/webapi": "^1.0.0",
     "@fastify/static": "^6.5.0",
-    "astro": "^1.1.3",
     "fastify": "^4.5.3"
+  },
+  "devDependencies": {
+    "astro": "^1.4.7"
   }
 }
