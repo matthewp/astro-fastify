@@ -1,10 +1,11 @@
-import type { FastifyInstance } from 'fastify';
+import type { FastifyInstance, FastifyServerOptions } from 'fastify';
 import type { AstroIntegration } from 'astro';
 
 export type ServerArgs = {
   clientRelative: string;
   assetsPrefix: string;
   port: number | undefined;
+  logger: FastifyServerOptions['logger'] | undefined;
 };
 
 export type DefineFastifyRoutes = (fastify: FastifyInstance) => void;
@@ -23,6 +24,10 @@ export type IntegrationOptions = {
    * any host variables.
    */
   port?: number;
+  /**
+   * Enable logging
+   */
+  logger?: FastifyServerOptions['logger'];
 };
 
 export default function(opts: IntegrationOptions): AstroIntegration;
