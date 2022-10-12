@@ -25,7 +25,8 @@ export type IntegrationOptions = {
    */
   port?: number;
   /**
-   * Enable logging
+   * Specifies logging options. By default logging is enabled. This can be
+   * any of the options specified by Fastify: https://www.fastify.io/docs/latest/Reference/Logging/
    */
   logger?: FastifyServerOptions['logger'];
 };

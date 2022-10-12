@@ -60,6 +60,10 @@ Specifies the port to use in production. Most hosts will set `process.env.PORT` 
 
 In development mode this option has no effect, as fastify runs on the same server as Astro.
 
+#### logger
+
+Specifies the Fastify logging options. See the [Fastify docs](https://www.fastify.io/docs/latest/Reference/Logging/) to see the options. Note that these options are built into the production bundle, so options such as `logger.stream` do not work.
+
 ### Note on route priority
 
 Fastify runs in front of Astro's own routing, which means that any routes you define in fastify take priority over routes defined in Astro. So if, for example, you have conflicting routes the Astro route will never be hit.
