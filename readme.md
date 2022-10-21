@@ -1,3 +1,5 @@
+![npm version number](https://img.shields.io/npm/v/@matthewp/astro-fastify)
+
 # @matthewp/astro-fastify
 
 An [fastify](https://www.fastify.io/) adapter to use in [Astro](https://astro.build/) projects. __@matthewp/astro-fastify__ allows you to use fastify and Astro side-by-side, and deploy your apps to Node.js powered by a battle-tested HTTP server.
