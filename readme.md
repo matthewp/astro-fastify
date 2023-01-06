@@ -8,7 +8,7 @@ Unlike most adapters, __@matthewp/astro-fastify__ also works in *dev mode*.
 
 ## install
 
-__@matthewp/astro-fastify__ is neededd in production so use `--save`.
+__@matthewp/astro-fastify__ is needed in production so use `--save`.
 
 ```shell
 npm install @matthewp/astro-fastify --save
@@ -25,7 +25,7 @@ import fastify from '@matthewp/astro-fastify';
 export default {
   output: 'server',
   adapter: fastify({
-    entry: new URL('./api/index.js', import.meta.url)
+    entry: new URL('./api/index.ts', import.meta.url)
   })
 };
 ```
