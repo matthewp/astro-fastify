@@ -6,6 +6,7 @@ export type ServerArgs = {
   assetsPrefix: string;
   port: number | undefined;
   logger: FastifyServerOptions['logger'] | undefined;
+  fastify?: Omit<FastifyServerOptions, 'logger'>;
 };
 
 export type DefineFastifyRoutes = (fastify: FastifyInstance) => void;
@@ -29,6 +30,10 @@ export type IntegrationOptions = {
    * any of the options specified by Fastify: https://www.fastify.io/docs/latest/Reference/Logging/
    */
   logger?: FastifyServerOptions['logger'];
+  /**
+   * Specifies fastify server options.
+   */
+  fastify?: Omit<FastifyServerOptions, 'logger'>;
 };
 
 export default function(opts: IntegrationOptions): AstroIntegration;
