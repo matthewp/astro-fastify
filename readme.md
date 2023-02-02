@@ -90,7 +90,7 @@ Which will create an entrypoint for your server, by default `dist/server/entry.m
 node dist/server/entry.mjs
 ```
 
-Configure your host to run this script. Assets and JavaScript are output to `dist/client/assets/`. You can configure your CDN to serve these files more efficiently and with long-lived cache headers.
+Configure your host to run this script. Assets and JavaScript are output to `dist/client/_astro/`. You can configure your CDN to serve these files more efficiently and with long-lived cache headers.
 
 ## License
 
