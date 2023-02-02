@@ -1,6 +1,6 @@
 {
   "name": "@matthewp/astro-fastify",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "A Fastify integration for Astro",
   "main": "lib/index.js",
   "types": "lib/types.d.ts",
